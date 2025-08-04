@@ -37,8 +37,9 @@ export default function ToDoList() {
   function changetodosType(e) {
     setTodosType(e.target.value);
   }
+
   useEffect(() => {
-    const Storage = JSON.parse(localStorage.getItem("Todos"));
+    const Storage = JSON.parse(localStorage.getItem("Todos")) || [];
     setTodos(Storage);
   }, []);
 
@@ -124,7 +125,7 @@ export default function ToDoList() {
           </div>
           {/* input + add button */}
           <Grid container spacing={2} style={{ marginTop: "20px" }}>
-            <Grid item size={8}>
+            <Grid  size={8}>
               <TextField
                 id="task-title"
                 label="Task Title"
@@ -155,7 +156,7 @@ export default function ToDoList() {
                 }}
               />
             </Grid>
-            <Grid item size={4}>
+            <Grid  size={4}>
               <Button
                 variant="contained"
                 color="primary"
