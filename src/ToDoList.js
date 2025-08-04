@@ -116,7 +116,7 @@ export default function ToDoList() {
           </ToggleButtonGroup>
           <div
             style={{
-              maxHeight: "60vh",
+              maxHeight: "40vh",
               color: "primary.main",
               overflowY: "scroll",
             }}
@@ -125,7 +125,7 @@ export default function ToDoList() {
           </div>
           {/* input + add button */}
           <Grid container spacing={2} style={{ marginTop: "20px" }}>
-            <Grid  size={8}>
+            <Grid size={8}>
               <TextField
                 id="task-title"
                 label="Task Title"
@@ -156,7 +156,7 @@ export default function ToDoList() {
                 }}
               />
             </Grid>
-            <Grid  size={4}>
+            <Grid size={4}>
               <Button
                 variant="contained"
                 color="primary"
