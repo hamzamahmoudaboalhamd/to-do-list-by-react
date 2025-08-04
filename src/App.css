@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+body {
+  background-color: #222;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.check {
+  transition: all 0.5s ease !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.check:hover {
+  background: #c5c5c5 !important;
+  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.4);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.todo-card {
+  transition: all 0.5s ease !important;
+}
+.todo-card:hover {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.4);
 }
 
-.App-link {
-  color: #61dafb;
+/* fonts */
+/* ...existing code... */
+
+/* fonts */
+@font-face {
+  font-family: "Roboto";
+  src: url("/public/fonts/Roboto-Black.ttf");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/public/fonts/Roboto-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/public/fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/public/fonts/Roboto-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/public/fonts/Roboto-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/public/fonts/Roboto-Thin.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/public/fonts/Roboto-Italic.ttf");
+  font-style: italic;
+  font-weight: 400;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* ...existing code... */
+
+/* fonts */
