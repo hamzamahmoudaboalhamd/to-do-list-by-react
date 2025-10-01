@@ -5,7 +5,7 @@
 [![Feature: State Management](https://img.shields.io/badge/Hooks-useState-blue?style=flat-square)]()
 [![Status: Completed](https://img.shields.io/badge/Status-Completed-success?style=flat-square)]()
 
-**[Place a Screenshot or GIF of the React To-Do List in action here]**
+
 
 ## ✨ Project Overview
 
