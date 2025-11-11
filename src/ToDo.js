@@ -71,7 +71,7 @@ export default function ToDo({ todo }) {
   }
 
   return (
-    <>
+    <div className="todo-item">
       {/* Model delete */}
 
       <Dialog onClose={handleClose} open={showDelete}>
@@ -111,7 +111,7 @@ export default function ToDo({ todo }) {
           size="medium"
           autoComplete="off"
           style={{
-            width: "90%",
+            width: "80%",
             marginBottom: "20px",
             marginLeft: "2rem",
             marginTop: "2rem",
@@ -128,7 +128,7 @@ export default function ToDo({ todo }) {
           size="medium"
           autoComplete="off"
           style={{
-            width: "90%",
+            width: "80%",
             marginBottom: "10px",
             marginLeft: "2rem",
           }}
@@ -174,7 +174,7 @@ export default function ToDo({ todo }) {
           />
         )}
         <CardContent>
-          <Grid container spacing={2}>
+          <Grid container>
             <Grid
               size={8}
               style={{
@@ -184,7 +184,7 @@ export default function ToDo({ todo }) {
               }}
             >
               <Typography
-                variant="h5"
+                variant="h6"
                 style={{
                   textDecoration: todo.iscompleted ? "line-through" : "none",
                   color: "#fff",
@@ -253,6 +253,6 @@ export default function ToDo({ todo }) {
           </Grid>
         </CardContent>
       </Card>
-    </>
+    </div>
   );
 }

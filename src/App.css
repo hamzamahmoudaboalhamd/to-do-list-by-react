@@ -21,6 +21,14 @@ body {
 }
 
 /* fonts */
+/* responsive */
+
+@media (max-width: 390px) {
+  .todo-item {
+    width: 325px;
+  }
+}
+
 /* ...existing code... */
 
 /* fonts */
